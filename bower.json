@@ -6,10 +6,8 @@
     "hphioolen"
   ],
   "description": "Start pakket voor het installeren van Newfish standaard onderdelen voor een de website",
-  "moduleType": "globals",
   "main": [
     "./assets/styles/newfish.scss",
-    "./assets/styles/variables.scss",
     "./assets/js/*"
   ],
   "keywords": [
@@ -18,7 +16,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
+	"node_modules",
     "bower_components",
     "test",
     "tests"
