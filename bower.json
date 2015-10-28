@@ -1,11 +1,12 @@
 {
-  "name": "Newfish",
-  "version": "1.0.1",
-  "homepage": "https://github.com/hphioolen/Newfish",
+  "name": "basis-template",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hphioolen/basis-template",
   "authors": [
     "hphioolen"
   ],
   "description": "Start pakket voor het installeren van Newfish standaard onderdelen voor een de website",
+  "moduleType": "globals",
   "main": [
     "./assets/styles/newfish.scss",
     "./assets/styles/variables.scss",
@@ -26,3 +27,4 @@
 
   }
 }
+
