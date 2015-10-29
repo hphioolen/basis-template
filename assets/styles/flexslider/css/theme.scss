@@ -11,8 +11,8 @@
   position: relative;
   zoom: 1; 
 
-  .border-radius( $flexslider-border-radius );
-  .box-shadow( $flexslider-box-shadow-x-axis, $flexslider-box-shadow-y-axis, $flexslider-box-shadow-blur, $flexslider-box-shadow-color, $flexslider-box-shadow-inset);
+  @include border-radius( $flexslider-border-radius );
+  @include box-shadow( $flexslider-box-shadow-x-axis, $flexslider-box-shadow-y-axis, $flexslider-box-shadow-blur, $flexslider-box-shadow-color, $flexslider-box-shadow-inset);
 
   .slides {
 
@@ -28,7 +28,7 @@
 
   max-height: $flex-viewport-max-height; 
 
-  .transition();
+  @include transition();
 
   .loading &{
 
@@ -73,7 +73,7 @@
     color: $flex-direction-nav-color; 
     text-shadow: $flex-direction-nav-text-shadow;
 
-    .transition( 0.3s, ease-in-out );
+    @include transition( 0.3s, ease-in-out );
 
     &:before  { 
 
@@ -248,8 +248,8 @@
     cursor: pointer; 
     text-indent: -9999px;
 
-    .box-shadow( 0, 0, 3px, rgba(0,0,0,0.3), inset );
-    .border-radius( 20px );
+    @include box-shadow( 0, 0, 3px, rgba(0,0,0,0.3), inset );
+    @include border-radius( 20px );
 
     &:hover { 
 
@@ -291,7 +291,7 @@
     opacity: .7; 
     cursor: pointer;
 
-    .transition();
+    @include transition();
 
     &:hover {opacity: 1;}
 
