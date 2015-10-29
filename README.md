@@ -43,9 +43,11 @@ verander bower.json in de overrides fonts mee laten nemen:
       "main": [
         "./fonts/*",
         "jquery.flexslider.js",
-		"flexslider.css"
       ]
     }
+
+Hiermee voegen we de fonts toe aan de stack (kan evt nog vervangen worden door font awesome).
+De CSS sla ik over, die komt dan uit basis-thema, de js nemen we wel over.
 
 in de template folder "includes" zit dan een flexslider header. Toevoegen aan de header door: 
 
