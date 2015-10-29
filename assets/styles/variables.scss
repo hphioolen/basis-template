@@ -9,15 +9,17 @@ $brand-secondary:         darken(#428bca, 6.5%) !default; // #337ab7
 //@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:100,400,500,700,800);
 
 //footer bg
-$content-info-bg:   		#1F232F;
-$site-info-bg:				darken($content-info-bg, 20%);	
+$content-info-bg:   		#1F232F !default;
+$site-info-bg:				darken($content-info-bg, 20%) !default;	
 
 //footer font-colors
-$content-info-color-header: lighten($content-info-bg, 50%);
-$content-info-color:		lighten($content-info-bg, 50%);
-$site-info-color:			lighten($site-info-bg, 30%);
+$content-info-color-header: lighten($content-info-bg, 50%) !default;
+$content-info-color:		lighten($content-info-bg, 50%) !default;
+$site-info-color:			lighten($site-info-bg, 30%) !default;
 
+/*
 //portfolio effects
 $figure-background: 			$brand-primary;
-$figure-header-color: 			#484c61;
-$figure-header-color-hover: 	#fff;
+$figure-header-color: 			#484c61 !default;
+$figure-header-color-hover: 	#fff !default;
+*/

@@ -1,6 +1,8 @@
 //Algemene classes, handig voor de site. Extra variabelen, te overschrijven in _variables.
 @import "variables.scss";
 @import "extras/responsiveText.scss";
+@import "extras/images.scss";
+@import "extras/flexslider.scss";
 
 //Gravity Forms Bootstrap settings
 @import "forms/gravity.scss";
