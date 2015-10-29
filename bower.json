@@ -8,6 +8,7 @@
   "description": "Start pakket voor het installeren van Newfish standaard onderdelen voor een de website",
   "main": [
     "./assets/styles/newfish.scss",
+    "./assets/styles/flexslider.scss",
     "./assets/js/*"
   ],
   "keywords": [

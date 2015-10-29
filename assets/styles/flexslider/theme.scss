@@ -21,8 +21,16 @@
   img {
     height: auto;
   }
+  li {
+	  background-size: cover;
+	  background-position: 50%;
+	  padding-top: 33.57%; 
+	}
+
   }
+  
 }
+
 
 .flex-viewport { 
 
@@ -62,7 +70,7 @@
     text-decoration: none; 
     display: block; 
     width: 40px; 
-    height: 40px; 
+    height: 61px; 
     margin: -20px 0 0; 
     position: absolute; 
     top: 50%; 
