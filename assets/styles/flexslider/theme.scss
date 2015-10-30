@@ -2,6 +2,16 @@
  * DEFAULT THEME
  * ====================================================================================================================*/
 
+#mainslider{
+	
+	 .slides > li {
+	  background-size: cover;
+	  background-position: 50%;
+	  padding-top: 33.57%; 
+	}
+	
+}
+
 
 .flexslider { 
 
@@ -21,15 +31,13 @@
   img {
     height: auto;
   }
-  li {
-	  background-size: cover;
-	  background-position: 50%;
-	  padding-top: 33.57%; 
-	}
+ 
 
   }
   
 }
+
+
 
 
 .flex-viewport { 
