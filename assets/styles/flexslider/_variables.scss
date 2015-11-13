@@ -1,0 +1,53 @@
+//Flexslider vars
+
+
+$font-path:                           "../fonts";
+$font-name:                           "flexslider-icon" !default;
+$font-file-name:                      "flexslider-icon" !default;
+$default-duration:                    1s !default;
+$default-easing:                      ease !default;
+$default-border-radius:               0px !default;
+$default-box-shadow-x-axis:           0 !default;
+$default-box-shadow-y-axis:           1px !default;
+$default-box-shadow-blur:             2px !default;
+$default-box-shadow-color:            rgba( 0, 0, 0, 0.2 ) !default;
+$default-box-shadow-inset:            '' !default;
+$flexslider-margin:                   0 0 60px !default;
+$flexslider-bg:                       #fff !default;
+$flexslider-border:                   none !default;
+$flexslider-border-radius:            0px !default;
+$flexslider-box-shadow-x-axis:        0 !default;
+$flexslider-box-shadow-y-axis:        1px !default;
+$flexslider-box-shadow-blur:          4px !default;
+$flexslider-box-shadow-color:         rgba( 0, 0, 0, 0.2 ) !default;
+$flexslider-box-shadow-inset:         '' !default;
+$flex-viewport-max-height:            2000px !default;
+$flex-viewport-loading-max-height:    300px !default;
+$flex-control-thumbs:                 5px 0 0 !default;
+$flex-direction-nav-color:            rgba(0,0,0,0.8) !default;
+$flex-direction-nav-text-shadow:      1px 1px 0 rgba( 255, 255, 255, 0.3 ) !default;
+$flex-direction-nav-icon-color:       rgba(0,0,0,0.8);
+$flex-direction-nav-icon-text-shadow: 1px 1px 0 rgba( 255, 255, 255, 0.3 ) !default;
+$flex-direction-nav-icon-prev:        '\f001' !default;
+$flex-direction-nav-icon-next:        '\f002' !default;
+$flex-pauseplay-icon-play:            '\f003' !default;
+$flex-pauseplay-icon-pause:           '\f004' !default;
+
+$control-nav-bottom-position: 		  -40px !default;
+$control-paging-radius: 			  20px !default;
+
+$flex-height:						  100% !default;
+
+//captions
+	$caption-top-position: 35% !default;
+	$caption-text-shadow: 0px 0px 10px #000 !default;
+	$caption-left-position: 20% !default;
+	$caption-width: 60% !default;
+	$caption-color: #fff !default;
+	$caption-background-color: rgba( 0, 0, 0, 0.2 ) !default;
+	$caption-padding: 20px !default;
+	//font
+	$caption-p-font-size: 20px !default;
+	$caption-h2-font-size: $caption-p-font-size * 2 !default; 
+
+	$flexslider-mobile-display: none !default;

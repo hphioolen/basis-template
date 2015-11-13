@@ -32,9 +32,8 @@ if (( count($slides) == 1 )) { ?>
 <?php } else if (( count($slides) > 1 )) { ?>
 		
 	
-<!--
-			<div class="slider">
-			  <div class="slides">
+			<div class="flexslider" id="mainslider">
+			  <ul class="slides">
 			  
 			  	
 			  	<?php foreach($slides as $post) : setup_postdata($post); ?> 
@@ -45,37 +44,32 @@ if (( count($slides) == 1 )) { ?>
 								$thumbnail_object = get_post($thumbnail_id);
 								$background_image = $thumbnail_object->guid;
 								
+								$thumb = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail');
+								$url = $thumb[0];
+								
 					}?>
 					
-					<div class="slide" style="background-image: url(<?=$background_image?>); " > </div>
+					<li class="slide" style="background-image: url(<?=$background_image?>); " data-thumb="<?= $url; ?>" >
+						<div class="container">
+							<?php the_title(); ?>
+							<?php the_content(); ?>
+						</div>
+					 </li>
 						
 					<?php endforeach; ?> 
 	  
-			  </div>
-			</div>
--->
-			
-			
-			<div class="flexslider">
-			  <ul class="slides">
-			    <li>
-			      <img src="slide1.jpg" />
-			    </li>
-			    <li>
-			      <img src="slide2.jpg" />
-			    </li>
-			    <li>
-			      <img src="slide3.jpg" />
-			    </li>
 			  </ul>
 			</div>
+			
+			
+
 
 <script type="text/javascript" charset="utf-8">
  
 	(function($) {
 		 
 		 $( document ).ready(function() {	
-		     $(".flexslider").flexslider();
+		     $("#mainslider").flexslider();
 		});
 		
 	})(jQuery);  

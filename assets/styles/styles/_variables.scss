@@ -1,5 +1,6 @@
 // colors
 $brand-secondary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-tertiary:         darken(#428bca, 6.5%) !default; // #337ab7
 
 
 //== Typography
@@ -16,6 +17,7 @@ $site-info-bg:				darken($content-info-bg, 20%) !default;
 $content-info-color-header: lighten($content-info-bg, 50%) !default;
 $content-info-color:		lighten($content-info-bg, 50%) !default;
 $site-info-color:			lighten($site-info-bg, 30%) !default;
+
 
 /*
 //portfolio effects
