@@ -1,3 +1,9 @@
+<?php if (is_home() || is_front_page()): ?>
+    
+    		<?php get_template_part('templates/includes/partner-flexslider'); ?>
+	
+	<?php endif; ?> 
+
 <footer class="content-info clearfix" role="contentinfo">
 	<div class="container">	
 		<div class="row">
