@@ -12,7 +12,7 @@ $imageheader-min-height: 480px !default;
 
 $breadcrum-bg-color: $navbar-default-bg !default;
 $breadcrum-padding: 5px 0 !default;
-$breadcrum-border: 1px solid darken($breadcrum-bg-color) !default;
+$breadcrum-border: 1px solid darken($breadcrum-bg-color, 30%) !default;
 
 
 //== Typography
