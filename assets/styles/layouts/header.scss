@@ -1,0 +1,37 @@
+.navbar {	
+	min-height: 50px;
+	margin-bottom: 0;
+	width: 100%;
+	
+	.navbar-collapse{
+		float: right;
+		padding: 15px 0;
+		
+	}
+}
+
+.navbar-default{
+	margin-bottom: 0; 
+}
+
+.imageHeader {
+	min-height: $imageheader-min-height;
+	background-size: cover;
+}
+
+.breadcrumbHolder{
+	padding: $breadcrum-padding;
+	background: $breadcrum-bg-color;
+	border-bottom: $breadcrumb-border;
+}
+
+
+
+
+
+#features {	
+	background: $features-bg-color;
+	padding: $features-padding;
+	border-bottom: 1px solid $brand-primary;
+	border-top: 1px solid $brand-primary;
+}

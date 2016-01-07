@@ -7,7 +7,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      	<?php 
+	      	$logo = get_template_directory_uri() . '/dist/images/logo.png';
+			$mobilelogo = get_template_directory_uri() . '/dist/images/logo.png';
+		?>
+      <a id="logo" href="<?php bloginfo( 'url' ); ?>" title="<?php bloginfo( 'description' ); ?>">		    	
+	    	<img class="hidden-xs" src="<?= $logo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+	    	<img class="visible-xs" src="<?= $mobilelogo; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+	    			    	
+	    </a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -20,11 +28,48 @@
   </div>
 </header>
 
-<?php if (is_home() || is_front_page()){
+<?php if (is_home() || is_front_page()):
 	
-	get_template_part('templates/includes/flexslider');
-	get_template_part('templates/includes/features');
+	get_template_part('templates/includes/flexslider'); ?>
 	
-}
+<div class="breadcrumbHolder">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				
+			</div>
+			<div class="col-sm-4 text-right">
+				<a href="#" class="btn btn-primary">Call to action</a>
+			</div>
+		</div>
+	</div>
+
+</div>	
+
+	
+<?php	get_template_part('templates/includes/features');
 
 ?>
+	<?php else: ?>	
+		<?php get_template_part('templates/includes/featured-image'); ?>
+
+
+<div class="breadcrumbHolder">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<?php if ( function_exists('yoast_breadcrumb') ) {
+				  yoast_breadcrumb('<p id="breadcrumbs">','</p>');			
+				} ?>
+			</div>
+			<div class="col-sm-4 text-right">
+				<a href="#" class="btn btn-primary">Call to action</a>
+			</div>
+		</div>
+	</div>
+
+</div>	
+
+<?php endif; ?>
